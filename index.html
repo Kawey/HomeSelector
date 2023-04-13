@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div id="image-container" class="image-container">
+      <img id="imgWall" src="\images\wall_1_w.png" alt="">
+      <img id="imgRoof" src="\images\roof_1_lb.png" alt="">
+      <img id="imgDoor" src="\images\door_1_w.png" alt="">
+      <img id="imgBG" class="imgBG" src="images\bg.jpg" alt="">
+    
+      <button id="btnPDF" class="btnPDF">Download PDF</button>
+    </div>
+    
+    <!-- Tab links -->
+    <div class="tab">
+      <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'Wall')">Wall</button>
+      <button class="tablinks" onclick="openTab(event, 'Roof')">Roof</button>
+      <button  class="tablinks" onclick="openTab(event, 'Door')">Door</button>
+    </div>
+    
+    <!-- Tab content -->
+    <div id="Wall" class="tabcontent active" style="display: flex;">
+      <div id="wall-color1" class="wall-color1 color wall-color"></div>
+      <div id="wall-color2" class="wall-color2 color wall-color"></div>
+      <div id="wall-color3" class="wall-color3 color wall-color"></div>
+    </div>
+    
+    <div id="Roof" class="tabcontent">
+      <div id="roof-color1" class="roof-color1 color roof-color"></div>
+      <div id="roof-color2" class="roof-color2 color roof-color"></div>
+      <div id="roof-color3" class="roof-color3 color roof-color"></div>
+    </div>
+    
+    <div id="Door" class="tabcontent">
+      <div id="door-color1" class="door-color1 color door-color"></div>
+      <div id="door-color2" class="door-color2 color door-color"></div>
+      <div id="door-color3" class="door-color3 color door-color"></div>
+    </div>
+    <div id="element-to-print">
+      <h2>Summary</Summary></h2>
+      <div class="pdf-option-box">
+        <p>Wall</p> 
+        <p id="option-wall">White</p>
+        <div id="wall-color" class="roof-color1"></div>
+      </div>
+      <div class="pdf-option-box">
+        <p>Roof</p>
+        <p id="option-roof">Light Blue</p>
+        <div id="roof-color" class="roof-color1"></div>
+      </div>
+      <div class="pdf-option-box">
+        <p>Door</p>
+        <p id="option-door">White</p>
+        <div id="door-color" class="door-color1"></div>
+      </div>
+    </div>
+      
+
+</body>
+</html>
