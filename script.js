@@ -78,6 +78,7 @@ window.onload = function() {
       const imgDoor = document.getElementById("imgDoor")
       activeColor("wall-color",btnWallColor1)
       activeColor("roof-color", btnRoofColor1)
+      activeColor("door-color", btnDoorColor1) 
       
       // Color buttons
   
