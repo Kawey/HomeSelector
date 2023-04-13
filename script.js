@@ -82,21 +82,21 @@ window.onload = function() {
       // Color buttons
   
       btnWallColor1.addEventListener("click",()=>{
-        imgWall.src = "/images/wall_1_w.png";
+        imgWall.src = "images/wall_1_w.png";
         userSelect.wall = "White"
         userSelect.wallColor = "#e8e8e9"
         changeSummary()
         activeColor("wall-color",btnWallColor1)
       })
       btnWallColor2.addEventListener("click", () => {
-        imgWall.src = "/images/wall_2_hg.png";
+        imgWall.src = "images/wall_2_hg.png";
         userSelect.wall = "Harbor Grey"
         userSelect.wallColor ="#b4b4b1"
         activeColor("wall-color",btnWallColor2)
         changeSummary()
       })
   btnWallColor3.addEventListener("click", () => {
-    imgWall.src = "/images/wall_3_dg.png";
+    imgWall.src = "images/wall_3_dg.png";
     userSelect.wall = "Dark Grey"
     userSelect.wallColor = "#6e6e6e"
     activeColor("wall-color", btnWallColor3)
@@ -104,21 +104,21 @@ window.onload = function() {
   })
 
       btnRoofColor1.addEventListener("click", () => {
-        imgRoof.src = "/images/roof_1_lb.png";
+        imgRoof.src = "images/roof_1_lb.png";
         userSelect.roof = "Light Blue"
         userSelect.roofColor = "#93a5aa"
         changeSummary()
         activeColor("roof-color",btnRoofColor1)
       })
       btnRoofColor2.addEventListener("click", () => {
-        imgRoof.src = "/images/roof_2_dg.png";
+        imgRoof.src = "images/roof_2_dg.png";
         userSelect.roof = "Dark Grey"
         userSelect.roofColor = "#828283"
         changeSummary()
         activeColor("roof-color",btnRoofColor2)
       })
     btnRoofColor3.addEventListener("click", () => {
-      imgRoof.src = "/images/roof_3_d.png";
+      imgRoof.src = "images/roof_3_d.png";
       userSelect.roof = "Black"
       userSelect.roofColor = "#4c4c4d"
       changeSummary()
@@ -126,21 +126,21 @@ window.onload = function() {
     })
 
   btnDoorColor1.addEventListener("click", () => {
-    imgDoor.src = "/images/door_1_w.png";
+    imgDoor.src = "images/door_1_w.png";
     userSelect.door = "White"
     userSelect.doorColor = "#e8e8e9"
     changeSummary()
     activeColor("door-color", btnDoorColor1)
   })
   btnDoorColor2.addEventListener("click", () => {
-    imgDoor.src = "/images/door_2_g.png";
+    imgDoor.src = "images/door_2_g.png";
     userSelect.door = "Gray"
     userSelect.doorColor = "#9a9a9b"
     changeSummary()
     activeColor("door-color", btnDoorColor2)
   })
   btnDoorColor3.addEventListener("click", () => {
-    imgDoor.src = "/images/door_3_b.png";
+    imgDoor.src = "images/door_3_b.png";
     userSelect.door = "Blue"
     userSelect.doorColor = "#7f8791"
     changeSummary()
