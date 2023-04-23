@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -14,11 +15,11 @@ body {
 .image-container {
   position: relative;
   max-width: 100%;
-    /* Set a max-width of 100% to make it responsive */
-    height: 0;
-      /* Set height to 0 */
-      padding-bottom: 62.5%;
-      /* Set padding-bottom to 75% (assuming a 4:3 aspect ratio) */
+  /* Set a max-width of 100% to make it responsive */
+  height: 0;
+  /* Set height to 0 */
+  padding-bottom: 62.5%;
+  /* Set padding-bottom to 75% (assuming a 4:3 aspect ratio) */
 }
 
 .image-container img {

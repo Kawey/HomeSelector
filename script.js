@@ -170,15 +170,15 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
   }
 
-  function activeColor(activTab,evt) {
-      // Declare all variables
-      var i, colorBox;
+function activeColor(activTab,evt) {
+  // Declare all variables
+  var i, colorBox;
 
-      // Get all elements with class="tabcontent" and hide them
-      colorBox = document.getElementsByClassName(activTab);
-      for (i = 0; i < colorBox.length; i++) {
-        colorBox[i].style.borderStyle = "none";   
-      }
-      evt.style.borderStyle = "solid"
-      evt.style.borderColor = "white"
-    }
+  // Get all elements with class="tabcontent" and hide them
+  colorBox = document.getElementsByClassName(activTab);
+  for (i = 0; i < colorBox.length; i++) {
+    colorBox[i].style.borderStyle = "none";   
+  }
+  evt.style.borderStyle = "solid"
+  evt.style.borderColor = "white"
+}
